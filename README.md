@@ -2,7 +2,7 @@
 Mini projeto feito para atividade escolar de fazer um led piscar(fui um pouco mais longe).
 
 ## Recomendações previas
-Melhor do que ver essa epxlicação minha toda confusa (me perdi no caminho) é melhor vendo o codigo na pratica, dá uma olhada no [Projeto no TinkerCad](http://google.com) que tém os componentes e tudo lá claramente mais facil de entender, ou dá uma olhada só no [Codigo Inteiro](http://google.com) ou passa no [Fontes](http://google.com) onde tem o valor binario de cada uma das letras e numeros.
+Melhor do que ver essa epxlicação minha toda confusa (me perdi no caminho) é melhor vendo o codigo na pratica, dá uma olhada no [Projeto no TinkerCad](https://www.tinkercad.com/things/hV0O1d4srxF) que tém os componentes e tudo lá claramente mais facil de entender, ou dá uma olhada só no [Codigo Inteiro](/code.cpp) ou passa no [Font](Font.md) onde tem o valor binario de cada uma das letras e numeros.
 
 ## O codigo
 O codigo em si é bem Curto, é apenas, recebe uma short int, transforma o short int em varios boleanos, e imprime nos Pinos de saida. Mas a parte interessante esta no short int.
@@ -63,3 +63,10 @@ bool Bit(short Char, int8_t Pos ){
   return (Char >> 15  - Pos)&1;
 };
 ```
+
+## Creditos
+Obrigado o cara que fez essa imagem aqui que eu usei de base no começo:
+ http://pt.fontriver.com/font/pixelzim_3x5/
+
+E a essa parada aqui que eu encontrei que me poupou bastante tempo:
+  https://www.topster.fr/texte-ascii/3x5.html
