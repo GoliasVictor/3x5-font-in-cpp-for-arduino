@@ -14,7 +14,7 @@ void Print3x5(short Char)
 }
 ```
 ## Porque um short int ao invés de um simples array. 
-Inicialmente, seria  um array de boleanos mesmo e pronto, porem, um boleano, ocupa 1byte(porque não e possivel enderessar apenas 1bit), então um array de 15 booleanos ocupa uns 15bytes(120 bits), sendo que preciso ocupar apenas 15bits, ainda mais que se trada de um arduino(uno), que tem apenas 2kb de memoria para o programa, é se por exemplo, formos armazenar 37 valores diferentes para todos os numeros + Lestras + espaço, ocuparia mais ou menos um quarto da memoria (exatamente 555bytes).
+Inicialmente, seria  um array de boleanos mesmo e pronto, porem, um boleano, ocupa 1byte(porque não e possivel enderessar apenas 1bit), então um array de 15 booleanos ocupa uns 15bytes(120 bits), sendo que preciso ocupar apenas 15bits, ainda mais que se trada de um arduino(uno), que tem apenas 32kb de memoria para o programa, é se por exemplo, formos armazenar 37 valores diferentes para todos os numeros + Lestras + espaço, ocuparia 555bytes de memoria, que no arduino uno já é algo.
 
 Por isso é preciso armazenar todo o array de boleano em um tipo de 2bytes, que ocupa 16 bits, deixando apenas 1 bit ocupado sem motivo. se formos aplicar isso no exemplo anterior, agora ocupariamos apenas 74 bytes. E se fosse ocupar o mesmo espaço seria possivel 277 simbolos diferentes. e por causa disso, que foi usado um short int.
 
